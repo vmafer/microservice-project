@@ -7,7 +7,7 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-@EnableJpaAuditing
+@EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 public class AccountsApplication {
 
 	public static void main(String[] args) {
